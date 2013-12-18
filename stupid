@@ -1,0 +1,41 @@
+#!/bin/bash
+
+## Defaults
+tiles=2x9
+optimize=5
+dir=.
+output=.
+name="sprite"
+
+while getopts t:o:d:n:out: opt; do
+  case $opt in
+    t)
+      tiles=$OPTARG
+      ;;
+    o)
+      optimize=$OPTARG
+      ;;
+    d)
+      dir=${OPTARG%/}
+      ;;
+    n)
+      name=$OPTARG
+      ;;
+    out)
+      output=${OPTARG%/}
+      ;;
+    esac
+done
+
+# take all images and convert it to a sprite
+echo "Converting images to sprites in $tiles grid"
+echo "Saving to $output/$name{xxxxxx}.png"
+montage -tile $tiles -mode concatenate -background transparent "$dir/*.*" $output/$name%05d.png > /dev/null 2>&1
+echo "-- Sprites converted --"
+
+# Optimize images
+echo "Compressing sprites with optimization $optimize"
+optipng -o$optimize $output/*.png > /dev/null 2>&1
+echo "-- Sprites optimized --"
+
+echo "Done, happy coding!"
