@@ -27,7 +27,7 @@ while getopts t:o:d:n:out: opt; do
     esac
 done
 
-# take all images and convert it to a sprite
+# take all images and convert it to sprites
 echo "Converting images to sprites in $tiles grid"
 echo "Saving to $output/$name{xxxxxx}.png"
 montage -tile $tiles -mode concatenate -background transparent "$dir/*.*" $output/$name%05d.png > /dev/null 2>&1
