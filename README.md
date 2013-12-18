@@ -23,4 +23,6 @@ Options | default | description
 -n      | sprite  | Sprite name. Numbers will be appenden
 -out    | .       | Output directory
 
+No options are required.
+
     stupid -t 2x7 -o 5 -d images/ -n sprite -out sprites/
