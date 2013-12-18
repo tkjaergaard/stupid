@@ -9,6 +9,10 @@ Alternatively you could do a wget.
 
 Now, the `stupid` command shoud be available anywhere.
 
+## Dependencies
+Imagemagick
+Optipng
+
 ## Instructions
 Navigate to a direvtory where you have your image files located.
 
