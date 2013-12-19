@@ -14,7 +14,7 @@ Now, the `stupid` command shoud be available anywhere.
 * Optipng
 
 ## Instructions
-Navigate to a direvtory where you have your image files located.
+Navigate to a directory where you have your image-files located.
 
 Now, you could run `stupid` and your files would be generated to 2x9 sprites.
 
