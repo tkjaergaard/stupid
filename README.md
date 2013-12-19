@@ -24,9 +24,12 @@ Options | default | description
 -t      | 2x9     | Sprite grid to be generated
 -o      | 5       | Optimization lavel [0-9]
 -d      | .       | Image location
--n      | sprite  | Sprite name. Numbers will be appenden
+-n      | sprite  | Sprite name, numbers will be appended
 -out    | .       | Output directory
 
 No options are required.
 
     stupid -t 2x7 -o 5 -d images/ -n sprite -out sprites/
+    
+[Stupid Sprite Generator](http://apps.stupid-studio.com/)   
+[Stupid jQuery Sprite Anim](https://github.com/StupidStudio/jQuery-Sprite-Anim)
