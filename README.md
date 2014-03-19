@@ -11,7 +11,7 @@ Now, the `stupid` command shoud be available anywhere.
 * Imagemagick
 * Optipng
 
-If your on osx, these two dependencies could be installed easily through [Homebrew](http://brew.sh/)
+If you are on osx, these two dependencies could be installed easily through [Homebrew](http://brew.sh/)
 
 
 ## Instructions
